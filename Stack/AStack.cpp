@@ -1,7 +1,7 @@
 // Figure 4.18: Array-based stack class implementation
 #include "StackADT.h"
 
-template <typename E> class AStack
+template <typename E> class AStack : public Stack<E>
 {
 private:
     int maxSize;        // Maximum size of stack
