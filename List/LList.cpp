@@ -18,7 +18,7 @@ private:
         {
             curr = head;
             head = head->next;
-            delete currl
+            delete curr;
         }
         
     }
@@ -93,7 +93,8 @@ public:
 
     int currPos() const {
         Link<E>* temp = head;
-        for (int i = 0; curr != temp; i++) {
+        int i;
+        for (i = 0; curr != temp; i++) {
             temp = temp->next;
         }
         return i;
